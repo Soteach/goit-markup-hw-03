@@ -395,6 +395,7 @@ padding-bottom: 60px;
 
     .main-button:hover,:focus {
     background: var(--accent-color);
+    color: var(--main-white-color);
 }
 
     .btn-group {
@@ -447,7 +448,7 @@ padding-bottom: 60px;
 
 .work-items{
     width: calc((100% - 90px)/3);
-    border:solid 1px #eee;
+    border-bottom:solid 1px #eee;
 }
 
 .work-items {
