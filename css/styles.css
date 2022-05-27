@@ -441,6 +441,10 @@ padding-bottom: 60px;
     justify-content: center;
 }
 
+.work-items:nth-child(-n + 6){
+    margin-bottom: 30px;
+}
+
 .work-items{
     width: calc((100% - 90px)/3);
     border:solid 1px #eee;
