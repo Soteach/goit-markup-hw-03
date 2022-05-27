@@ -38,7 +38,7 @@ img{
     padding-left: 15px;
     padding-right: 15px;
     /* min-height: 80px; */
-    outline: solid 2px red ;
+    /* outline: solid 2px red ; */
 }
 
 .header {
@@ -128,14 +128,17 @@ color: var(--accent-color);
 }
 
 .header .container{
-display: flex; 
-align-items: center;
+    display: flex; 
+    align-items: center;
 }
 
 .header-connect {
     margin-left:auto;
 }
 
+.current {
+    color:var(--accent-color)
+}
 
 /* HERO */
 .hero {
@@ -230,6 +233,10 @@ align-items: center;
     margin-bottom: 50px;
 }
 
+/* FULLY-HIDDEN
+.news-group {
+    visibility: hidden;
+} */ 
 
 .work-list {
     display: flex;
@@ -253,27 +260,46 @@ align-items: center;
 
 .team-list {
     display: flex;
-    
 }
 .team-item:not(:last-child) {
     margin-right: 30px;
 }
 
+.team-item {
+    width: 270px;
+    min-height: 376px;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+    border-radius: 0px 0px 4px 4px;
+}
+
+.card-image {
+    max-width: 100%;
+    height: auto;
+}
+
+.card-header {
+    margin: 0;
+    padding-top: 30px;
+    background-color: var(--main-white-color);
+    
+}
+.card-image{
+    display: block;
+}
 .section-header{
     margin-bottom: 50px;
 }
 
-.element.style{
-    margin-bottom: 10px;
-}
-.works-title{
-    margin-top: 10px;
+
+.works-title-first{
     margin-bottom: 10px;
     text-align: center;
+    color: var(--header-color);
 }
 
 .team-workers{
     text-align: center;
+    padding-bottom: 30px;
 }
 
 /* __FOOTER */
@@ -364,11 +390,31 @@ padding-bottom: 60px;
     color: var(--header-color);
     background-color: var(--second-section-color);
     border: 0px;
+    border-radius: 4px;
 }
 
-.main-button:hover,:focus {
+    .main-button:hover,:focus {
     background: var(--accent-color);
 }
+
+    .btn-group {
+    display: flex;
+    justify-content:center;
+    margin-bottom: 50px;
+}
+
+    .btn-group button{
+    padding: 8px 22px;
+    border:none;
+}
+
+.btn-group .list+.list{
+    margin-left: 8px;
+}
+
+
+
+/* WORKGROUP */
 .works-title {
     font-weight: 700;
     font-size: 18px;
@@ -377,12 +423,46 @@ padding-bottom: 60px;
     color: var(--header-color);
 }
 
-.portfolio-font {
-font-size: 16px;
-line-height: calc(30/16);
-letter-spacing: 0.03em;
+    .portfolio-font {
+    font-size: 16px;
+    line-height: calc(30/16);
+    letter-spacing: 0.03em;
+    }
+
+    .portfolio-section {
+    background-color: var(--main-white-color);
+    padding-top: 94px;
+    padding-bottom: 94px;
 }
 
-.portfolio-section {
-    background-color: var(--main-white-color);
+.work-example{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+
+.work-items{
+    width: calc((100% - 90px)/3);
+    border:solid 1px #eee;
+}
+
+.work-items {
+    margin-right: 30px;
+}
+
+.work-items:nth-child(3n){
+    margin-right: 0;
+}
+
+
+.works-title {
+    padding-top: 20px;
+    padding-bottom: 4px;
+    padding-left: 24px;
+    text-align: left;
+}
+
+.portfolio-font {
+    padding-left: 24px;
+    padding-bottom: 20px;
 }
